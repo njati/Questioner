@@ -4,7 +4,7 @@ from flask import Blueprint, request, jsonify, make_response
 
 USERVIEW = Blueprint('USERVIEW', __name__)
    
-    
+# @USERVIEW.route('/', me)
 @USERVIEW.route('/signin', methods=['POST'])
 def login():
 
