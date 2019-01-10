@@ -5,15 +5,15 @@ from flask import Blueprint, request, jsonify, make_response
 USERVIEW = Blueprint('USERVIEW', __name__)
    
     
-@USERVIEW.route('/login', methods=['POST'])
+@USERVIEW.route('/signin', methods=['POST'])
 def login():
 
     data = request.get_json()
-    username = data['uname']
+    uname = data['uname']
     email = data['email']
 
     return make_response(jsonify({
         "status": "ok",
-        "username": username,
+        "uname": uname,
         "email": email
     }), 201)

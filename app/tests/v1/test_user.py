@@ -19,8 +19,8 @@ class TestUser(unittest.TestCase):
 
     def test_register(self):
 
-        response = self.app.post('/auth/signup',
-                                 data = json.dumps(self.data),
+        response = self.app.post('/signin',
+                                 data=json.dumps(self.data),
                                  content_type="application/json")
 
         result = json.loads(response.data)
