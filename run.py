@@ -1,4 +1,8 @@
 """Entry point to the Application"""
 
 from app.api import APP
-APP.run(debug=True)
+import os
+
+if __name__=="__main__":
+    APP.run(host=os.getenv('IP', '0.0.0.0'), 
+            port=int(os.getenv('PORT', 4444)))
