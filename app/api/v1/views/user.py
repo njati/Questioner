@@ -8,7 +8,7 @@ USERVIEW = Blueprint('USERVIEW', __name__)
 @USERVIEW.route('/signin', methods=['POST'])
 def login():
 
-    data = request.get_json()
+    data = request.get_json(force=True)
     uname = data['uname']
     email = data['email']
 

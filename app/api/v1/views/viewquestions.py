@@ -8,7 +8,7 @@ QUESTION_BLUEPRINT = Blueprint('add_a_question', __name__)
 QUESTION_DETAILS = Recordquiz()
 
 
-@QUESTION_BLUEPRINT.route('/questions/', methods=['POST'])
+@QUESTION_BLUEPRINT.route('/questions', methods=['POST'])
 def post_question():
     '''Create user new question endpoint'''
     data = request.get_json()
