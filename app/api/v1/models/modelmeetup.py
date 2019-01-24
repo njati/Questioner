@@ -13,7 +13,7 @@ class Records():
     def add_meetup(self):
         '''Create a new meetup'''
         new_meetup_data = {
-            "meetup_date": self.meetup_date,
+                        "meetup_date": self.meetup_date,
             "topic": self.topic,
             "about": self.about,
             "location": self.location,

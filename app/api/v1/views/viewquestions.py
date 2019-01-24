@@ -19,13 +19,13 @@ def post_question():
     user_id = data["user_id"]
 
     questions_data = {
+        
         "question_id": len(QUESTION_DETAILS.questions_database)+1,
         "created_at": datetime.datetime.now(),
         "question": question,
         "title": title,
         "meetup_id":meetup_id,
         "user_id":user_id
-
     }
 
     QUESTION_DETAILS.questions_database.append(questions_data)
