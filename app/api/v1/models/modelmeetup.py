@@ -14,9 +14,9 @@ class MeetupRecords():
     def add_meetup(self):
         '''Create a new meetup'''
         new_meetup_data = {
-            "meetup_id": self.meetup_id,
-            "meetup_date": self.meetup_date,
-            "topic": self.topic,
+            "meetup_id":self.meetup_id,
+            "meetup_date":self.meetup_date,
+            "topic":self.topic,
             "about":self.about,
             "location":self.location,
             "meetup_image":self.meetup_image
