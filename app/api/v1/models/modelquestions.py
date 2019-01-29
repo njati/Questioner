@@ -11,10 +11,10 @@ class Recordquiz():
     def add_question(self):
         '''Create a new question'''
         new_question_data = {
-            "question_id": len(QuestionRecords)+1,
-            "meetup_id": self.meetup_id,
-            "user_id": self.user_id,
-            "question": self.question,
+            "question_id":len(QuestionRecords)+1,
+            "meetup_id":self.meetup_id,
+            "user_id":self.user_id,
+            "question":self.question,
             "upvotes":0,
             "downvotes":0
         }
