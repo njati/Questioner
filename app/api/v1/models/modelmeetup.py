@@ -17,8 +17,8 @@ class MeetupRecords():
             "meetup_id": self.meetup_id,
             "meetup_date": self.meetup_date,
             "topic": self.topic,
-            "about": self.about,
-            "location": self.location,
+            "about":self.about,
+            "location":self.location,
             "meetup_image":self.meetup_image
         }
 
