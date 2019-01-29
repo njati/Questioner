@@ -13,8 +13,8 @@ class Recordquiz():
         new_question_data = {
             "question_id": len(QuestionRecords)+1,
             "meetup_id": self.meetup_id,
-            "user_id": self.user_id,
-            "question": self.question,
+            "user_id":self.user_id,
+            "question":self.question,
             "upvotes":0,
             "downvotes":0
         }
