@@ -7,7 +7,7 @@ Recordquestions = Recordquiz()
 class CounterUpvotes():
     upvotes_database = []
 
-    def __init__(self, question_id): 
+    def __init__(self,question_id): 
         self.userId = 1  #user_id for user making request
         self.questionId = question_id
 
