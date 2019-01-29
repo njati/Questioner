@@ -14,7 +14,7 @@ class CounterUpvotes():
 
     def add_upvote(self):
         new_upvote = {
-            "questionid": self.questionId,
+            "questionid":self.questionId,
             "userid":self.userId
         }
 
