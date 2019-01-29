@@ -13,20 +13,16 @@ def post_question():
     '''Create user new question endpoint'''
     data = request.get_json()
 
-    question = data["question"]
-    title = data["title"]
-    meetup_id = data["meetup_id"]
-    user_id = data["user_id"]
-
     questions_data = {
-        
         "question_id": len(QUESTION_DETAILS.questions_database)+1,
         "created_at": datetime.datetime.now(),
-        "question": question,
-        "title": title,
-        "meetup_id":meetup_id,
-        "user_id":user_id
+        "question": data["question"],
+        "title": data["title"],
+        "meetup_id": data["meetup_id"],
+        "user_id":data["user_id"],
+        "upvotes":0,
+        "downvotes":0
     }
-
+    
     QUESTION_DETAILS.questions_database.append(questions_data)
     return jsonify(QUESTION_DETAILS.questions_database), 201

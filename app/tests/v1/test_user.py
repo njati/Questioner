@@ -1,5 +1,5 @@
 """This tests user credentials endpoints"""
-
+import os
 import json
 import unittest
 from app.api import APP
