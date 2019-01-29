@@ -15,11 +15,11 @@ def meetups():
     data = request.get_json()
     meetup_data = {
         "meetup_id": len(MEETUP_DETAILS.meetups_database)+1,
-        "created_at": datetime.datetime.now(),
-        "meetup_date": data["meetup_date"],
-        "topic": data["topic"],
-        "about": data["about"],
-        "location": data["location"],
+        "created_at":datetime.datetime.now(),
+        "meetup_date":data["meetup_date"],
+        "topic":data["topic"],
+        "about":data["about"],
+        "location":data["location"],
         "meetup_image":data["meetup_image"]
 
     }
